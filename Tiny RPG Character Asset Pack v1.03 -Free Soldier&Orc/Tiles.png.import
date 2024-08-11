@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://v1a87gxpa1sd"
-path="res://.godot/imported/Tiles.png-5e02b4d7b53bc8a058837723bd6bdd36.ctex"
+path="res://.godot/imported/Tiles.png-92014fba62018f59f447cb2aaf093b01.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSets/Tiles.png"
-dest_files=["res://.godot/imported/Tiles.png-5e02b4d7b53bc8a058837723bd6bdd36.ctex"]
+source_file="res://Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Tiles.png"
+dest_files=["res://.godot/imported/Tiles.png-92014fba62018f59f447cb2aaf093b01.ctex"]
 
 [params]
 
