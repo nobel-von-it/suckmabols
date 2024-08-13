@@ -349,8 +349,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gasl2"]
-radius = 8.0
-height = 16.0
+radius = 4.0
+height = 18.0
 
 [sub_resource type="Animation" id="Animation_mqxi8"]
 length = 0.001
@@ -862,7 +862,7 @@ parameters/blend_position = Vector2(0, 0)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 texture_filter = 1
-zoom = Vector2(3, 3)
+zoom = Vector2(10, 10)
 process_callback = 0
 limit_left = 0
 limit_top = 0
