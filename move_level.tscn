@@ -1,12 +1,68 @@
-[gd_scene load_steps=3 format=3 uid="uid://btjls4b5a3e52"]
+[gd_scene load_steps=11 format=3 uid="uid://btjls4b5a3e52"]
 
 [ext_resource type="Script" path="res://move_level.gd" id="1_ikxuj"]
+[ext_resource type="Texture2D" uid="uid://cvrqghnndt63x" path="res://Dimensional_Portal.png" id="2_kucen"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1oco"]
+atlas = ExtResource("2_kucen")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3nn2c"]
+atlas = ExtResource("2_kucen")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6snef"]
+atlas = ExtResource("2_kucen")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b3ajg"]
+atlas = ExtResource("2_kucen")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f7b2v"]
+atlas = ExtResource("2_kucen")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_82dan"]
+atlas = ExtResource("2_kucen")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3024x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1oco")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3nn2c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6snef")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b3ajg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f7b2v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82dan")
+}],
+"loop": true,
+"name": &"portal",
+"speed": 10.0
+}]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_pv7au"]
 b = Vector2(0, 22)
 
 [node name="Portal" type="Area2D"]
 script = ExtResource("1_ikxuj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_3024x")
+animation = &"portal"
+frame_progress = 0.891271
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("SegmentShape2D_pv7au")

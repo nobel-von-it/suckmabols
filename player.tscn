@@ -862,7 +862,7 @@ parameters/blend_position = Vector2(0, 0)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 texture_filter = 1
-zoom = Vector2(10, 10)
+zoom = Vector2(4, 4)
 process_callback = 0
 limit_left = 0
 limit_top = 0

@@ -1,11 +1,10 @@
 extends Area2D
 
-var first_time = true
 const last_level = 2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$AnimatedSprite2D.play("portal") # Replace with function body.
 	
 func extract_number_from_string(level_string: String) -> int:
 	var regex = RegEx.new()
@@ -23,7 +22,4 @@ func change_level():
 		get_tree().change_scene_to_file("res://level_" + str(scene_num + 1) + ".tscn")
 
 func _on_body_entered(body):
-	if first_time:
-		first_time = false
-	else: 
-		change_level()
+	change_level()

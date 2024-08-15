@@ -48,3 +48,4 @@ attack_bow={
 
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
+environment/defaults/default_clear_color=Color(0.010435, 0.0122524, 0.00471923, 1)
