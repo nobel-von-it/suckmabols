@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=3 uid="uid://bwe4ox424j4xj"]
+[gd_scene load_steps=69 format=3 uid="uid://bwe4ox424j4xj"]
 
 [ext_resource type="Texture2D" uid="uid://c4x7xr8avwpuq" path="res://Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Attack01.png" id="1_856jg"]
 [ext_resource type="Script" path="res://player.gd" id="1_hj7wx"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dkn7p4a4tcqji" path="res://Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Hurt.png" id="5_ip7l3"]
 [ext_resource type="Texture2D" uid="uid://do81xfnq1a8c4" path="res://Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Idle.png" id="6_aljoh"]
 [ext_resource type="Texture2D" uid="uid://c857m7e2vy7xp" path="res://Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Walk.png" id="7_1b06c"]
+[ext_resource type="FontFile" uid="uid://cqraouye40hmj" path="res://tinypixel/tinypixel.otf" id="9_vuych"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xmj5g"]
 atlas = ExtResource("1_856jg")
@@ -840,7 +841,6 @@ _data = {
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_hj7wx")
-metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_nmhrc")
@@ -874,5 +874,15 @@ position_smoothing_enabled = true
 [node name="Timer" type="Timer" parent="."]
 process_callback = 0
 wait_time = 0.7
+
+[node name="HP" type="Label" parent="."]
+offset_left = -8.0
+offset_top = -16.0
+offset_right = 121.0
+offset_bottom = 58.0
+scale = Vector2(0.127796, 0.0824098)
+theme_override_fonts/font = ExtResource("9_vuych")
+theme_override_font_sizes/font_size = 64
+text = "HUI"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

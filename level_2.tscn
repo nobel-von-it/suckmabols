@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://6gpw4xtkfued" path="res://tile_map.tscn" id="3_s0dfe"]
 [ext_resource type="PackedScene" uid="uid://bwe4ox424j4xj" path="res://player.tscn" id="4_8daaf"]
 [ext_resource type="PackedScene" uid="uid://btjls4b5a3e52" path="res://move_level.tscn" id="5_vl0rh"]
-[ext_resource type="AudioStream" uid="uid://dqwrohrxmtooi" path="res://Die Grenzwacht hielt im Osten German folk song English translation.mp3" id="6_62gs5"]
+[ext_resource type="PackedScene" uid="uid://ds41uxc1bwi5f" path="res://audio_stream_player.tscn" id="7_cp4lj"]
 
 [node name="level_2" type="Node2D"]
 script = ExtResource("1_sv4hg")
@@ -44,5 +44,4 @@ layer_0/tile_data = PackedInt32Array(1179648, 524288, 1, 1245184, 524288, 2, 117
 position = Vector2(1695, 48)
 scale = Vector2(2.3954, 49.9874)
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("6_62gs5")
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("7_cp4lj")]

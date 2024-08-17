@@ -15,6 +15,10 @@ run/main_scene="res://control.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Node2d="*res://Node2D.gd"
+
 [input]
 
 move_right={
@@ -48,4 +52,4 @@ attack_bow={
 
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
-environment/defaults/default_clear_color=Color(0.010435, 0.0122524, 0.00471923, 1)
+environment/defaults/default_clear_color=Color(0.0705882, 0.0470588, 0.0470588, 1)
